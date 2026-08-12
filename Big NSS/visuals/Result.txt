@@ -1,0 +1,16 @@
+Expain what the ROC AUC value tells you for the model one day before derate.
+If the ROC AUC is 0.80 for the 1-day model, it means:
+
+if you compare one truck that does derate within the next day with one that does not
+the model will rank the derating truck as higher risk about 80% of the time
+So it tells you whether the model has meaningful predictive power for early warning.
+
+Interpretation scale
+0.50 → no predictive value
+0.70 → moderate
+0.80 → strong
+0.90+ → very strong
+What it does not tell you
+the exact probability for a specific truck
+the best alert threshold for action
+the cost of false alarms vs missed derates
